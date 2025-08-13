@@ -1,0 +1,258 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+.main-header {
+  background: url('img/about.png') no-repeat center center/cover;
+  height: 70vh;
+  color: white;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items:right;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+ }
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.toggle-btn {
+  display: none;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.hero-section {
+  height: 100%;
+  display: flex;
+  align-items:center;
+  padding-left: 10%;
+}
+
+.hero-section h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+} 
+.about-text {
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  max-width: 900px;
+  margin:auto;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .stat-card {
+    width: 90%;
+  }
+}
+ /* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Our People Section */
+.people-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 1rem;
+  background: #fff;
+  border-top: 4px solid #003087;
+  border-bottom: 4px solid #003087;
+  box-shadow: inset 0 1px 0 #e2e2e2;
+}
+
+.people-section .text {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.people-section .text h2 {
+  font-size: 2rem;
+  color: #003087;
+  margin-bottom: 1rem;
+}
+
+.people-section .text p {
+  color: #444;
+}
+
+.people-section .image {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.people-section img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Awards Section */
+.awards {
+  background: #f0f2f5;
+  padding: 3rem 1rem;
+}
+
+.awards h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #003087;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.award-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.award-main img {
+  max-width: 300px;
+  border: 4px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.award-main ul {
+  max-width: 600px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.award-main ul li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #444;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.award-main ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #003087;
+  font-weight: bold;
+}
+
+/* Collapsible Awards */
+.collapse-container {
+  margin-top: 2.5rem;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.collapsible {
+  background: #fff;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  transition: background 0.3s;
+}
+
+.collapsible:hover {
+  background: #e6f0ff;
+}
+
+.content {
+  padding: 0 1.5rem 1rem;
+  display: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.quote {
+  background: #2c3e50;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quote blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+
+/* Footer */
+ .footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+} 

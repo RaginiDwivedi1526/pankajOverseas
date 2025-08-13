@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Manufacturing - Global Leader in Advanced Manufacturing</title>
+    <meta name="description" content="World's largest exporter of precision-engineered products, working with global brands and employing over 100,000 people">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+    cursor: pointer;
+    font-size: 1.2rem;
+    background: var(--card-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    user-select: none;
+    transition: background 0.3s;
+  }
+
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --card-bg: #f0f0f0;
+  }
+
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+  }
+  .hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.custom-search-bar {
+    position: fixed;
+    top: 1rem;
+    right: 5rem;
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 0.3rem 0.8rem;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   margin-top: -7px;
+}
+
+.custom-search-bar input {
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.custom-search-bar button {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-left: 0.3rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.custom-search-bar button:hover {
+    background: #34495e;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <!-- <h1>Nexus</h1> -->
+                    <img src="images/LOGO.jpg" alt="">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-menu" id="nav-menu" >
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#capabilities" class="nav-link">Capabilities</a>
+                    <a href="people.html" class="nav-link">Our People</a>
+                    <a href="/sustanability page/sustan.html" class="nav-link">Sustainability</a>
+                    <a href="carrear.html" class="nav-link">Careers</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <!-- Search and CTA -->
+                <div class="nav-actions" >
+<div class="custom-search-bar" id="custom-search-bar" >
+  <input type="text" id="custom-search-input" placeholder="Search here...">
+  <button id="custom-search-button" aria-label="Search">
+    <i class="fas fa-search"></i>
+  </button>
+</div>
+
+   
+
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#capabilities" class="mobile-link">Capabilities</a>
+            <a href="people.html" class="mobile-link">Our People</a>
+            <a href="sustainability.html" class="mobile-link">Sustainability</a>
+            <a href="carrear.html" class="mobile-link">Careers</a>
+            <a href="blog.html" class="mobile-link">Blog</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+            <button class="btn-cta mobile-cta">Enquiry Now</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="https://cdn.pixabay.com/video/2022/05/02/115790-705553537_large.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+</div>
+
+        
+        <div class="hero-content">
+            <h1 class="hero-title" style="margin-top: 60px;">
+                Global Leader in
+                <span class="hero-subtitle">Advanced Manufacturing</span>
+            </h1>
+            
+            <p class="hero-description">
+                World's largest exporter of precision-engineered products, 
+                working with global brands and employing over 100,000 people 
+                across innovative manufacturing facilities.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn-primary">Discover Our Capabilities</button>
+                <button class="btn-secondary">Learn More About Us</button>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="about" class="stats-section">
+        <div class="container">
+            <!-- Company Description -->
+            <div class="company-description">
+                <p>
+                    Established in 1985 by visionary leaders, Nexus has grown to become the world's 
+                    largest precision manufacturer, operating more than 75+ facilities and 5 processing 
+                    centers across 12 countries. We have around 100,000+ employees, 65% of whom are 
+                    women. We are committed to serving our customers through design-led innovation, 
+                    vertically integrated operations, and our positive social and environmental business practices.
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <!-- Stats Cards -->
+                <div class="stats-cards">
+                    <div class="stat-card">
+                        <p class="stat-category">Vertically-integrated</p>
+                        <p class="stat-number">80%</p>
+                        <p class="stat-description">of the capacity of our facilities is directed to our own manufacturing</p>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <p class="stat-category">Design-led innovation</p>
+                        <p class="stat-number">90+</p>
+                        <p class="stat-description">engineers and designers across all business verticals</p>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <p class="stat-category">Investing in our employees</p>
+                        <p class="stat-number">86,000+</p>
+                        <p class="stat-description">employees trained under professional development programs</p>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <p class="stat-category">Driving sustainability</p>
+                        <p class="stat-number">100%</p>
+                        <p class="stat-description">renewable electrical energy target by 2026</p>
+                    </div>
+                </div>
+
+                <!-- Corporate Building Image -->
+                <div class="corporate-image">
+                    <div class="image-container">
+                        <img src="/Reception.jpg" alt="Modern corporate headquarters">
+                        <div class="image-overlay"></div>
+                        <button class="image-cta" onclick="about()">Learn More About Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section id="capabilities" class="capabilities-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2>Our Capabilities</h2>
+                <p>
+                  pankaj overseas vertically integrated operations and high-end, value-added services 
+                    are at the cutting edge of innovation in the manufacturing industry.
+                </p>
+            </div>
+
+            <!-- Hero Manufacturing Image -->
+            <div class="manufacturing-hero">
+                <img src="/Stitching.jpg" alt="Advanced manufacturing facility">
+                <div class="manufacturing-overlay">
+                    <div class="manufacturing-content">
+                        <h3>Innovation at Every Step</h3>
+                        <p>From concept to delivery, excellence in manufacturing</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capabilities Grid -->
+            <div class="capabilities-grid">
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Advanced Manufacturing</h3>
+                    </div>
+                    <p>State-of-the-art production facilities</p>
+                </div>
+
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3>Precision Engineering</h3>
+                    </div>
+                    <p>High-precision manufacturing processes</p>
+                </div>
+
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Quality Laboratory</h3>
+                    </div>
+                    <p>Internal testing and quality assurance</p>
+                </div>
+
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>Product Development</h3>
+                    </div>
+                    <p>End-to-end product design and development</p>
+                </div>
+
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Design Innovation</h3>
+                    </div>
+                    <p>Creative design and prototyping services</p>
+                </div>
+
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Global Operations</h3>
+                    </div>
+                    <p>Worldwide manufacturing and logistics</p>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="capabilities-cta">
+                <button class="btn-primary" onclick="cap()">Explore All Capabilities</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <h3>Nexus</h3>
+                    <p>
+                        Leading the future of manufacturing through innovation, 
+                        sustainability, and excellence in everything we do.
+                    </p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@nexus.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>1234 Innovation Drive<br>Tech City, TC 12345</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our History</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Capabilities</h4>
+                    <ul>
+                        <li><a href="#">Manufacturing</a></li>
+                        <li><a href="#">Engineering</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Quality</a></li>
+                        <li><a href="#">Logistics</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Sustainability</h4>
+                    <ul>
+                        <li><a href="#">Environmental</a></li>
+                        <li><a href="#">Social Impact</a></li>
+                        <li><a href="#">Governance</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#">Initiatives</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nexus Manufacturing. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+      <script>
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    document.querySelector('.theme-toggle').textContent = 
+      newTheme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+  }
+
+  (function () {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    const btn = document.querySelector('.theme-toggle');
+    if (btn) {
+      btn.textContent = savedTheme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+    }
+  })();
+
+
+// Enter press par bhi search ho
+customSearchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        customSearchButton.click();
+    }
+});
+
+</script>
+
+
+
+</body>
+</html>

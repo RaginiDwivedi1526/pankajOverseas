@@ -1,0 +1,210 @@
+
+/* Reset & global styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+img { width: 100%; border-radius: 12px; }
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #0c4a32;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: #007b5e;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('https://www.shahi.co.in/wp-content/uploads/2021/03/banner-sustainability.jpg') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+.hero-content { position: relative; z-index: 1; }
+.hero h1 { font-size: 3em; }
+.hero p { font-size: 1.2em; margin-top: 10px; }
+
+/* Main Content */
+.sustainability-content { padding: 60px 20px; background: #fff; }
+.container { max-width: 1200px; margin: 0 auto; }
+h2 { text-align: center; margin-bottom: 20px; }
+
+.filter-buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+.filter-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  background: #e0f2f1;
+  border: 1px solid #007b5e;
+  color: #007b5e;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: #007b5e;
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.card {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover { transform: translateY(-10px); }
+.card h3 { margin-top: 15px; font-size: 1.5em; }
+
+/* Focus Areas */
+.focus-areas { background: #e8f5e9; padding: 60px 20px; }
+.areas-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 30px;
+}
+.area {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.area:hover { transform: translateY(-5px); }
+
+/* Reports Section */
+.reports { padding: 60px 20px; background: #fdfdfd; }
+.report-links { list-style: none; padding-left: 0; margin-top: 20px; }
+.report-links li { margin: 10px 0; }
+.report-links a {
+  text-decoration: none;
+  color: #007b5e;
+  font-weight: bold;
+}
+.report-links a:hover { text-decoration: underline; }
+
+/* Footer */
+footer { background-color: #0c4a32; color: white; padding: 25px 0; text-align: center; }
+.footer-container a { color: #a9f5d0; margin: 0 5px; text-decoration: none; }
+.footer-container a:hover { text-decoration: underline; }
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    background: #ffffff;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    display: none;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hero {
+    height: 40vh;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .cards, .areas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    background: #ffffff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
